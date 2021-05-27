@@ -1,0 +1,10 @@
+lib/
+log/
+x64/
+*.qrc
+*.ui
+*.vcxproj
+*.filters
+*.user
+*.config
+.vs/
