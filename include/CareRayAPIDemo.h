@@ -12,12 +12,12 @@
 #include "stdafx.h"
 #include <iostream>
 #include <Windows.h>
+#include "opencv2/opencv.hpp"
 
 #include "CallbackImp.h"
 #include "IntlMsgAliasID.h"
 #include <map>
 #include <vector>
-#include "opencv2/core/core.hpp"
 
 using namespace std;
 
