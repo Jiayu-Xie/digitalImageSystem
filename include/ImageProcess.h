@@ -6,10 +6,8 @@
 class ImageProcess
 {
 public:
-	cv::Mat originImage16Bit;
-	ImageProcess(cv::Mat image);
 	// center代表窗位，width代表窗宽，不传递默认全部像素转化
-	cv::Mat To8BitLinear(int center = -1, int width = -1);
+	cv::Mat To8BitLinear(cv::Mat image16Bit, int center = -1, int width = -1);
 	// 翻转，type为0表示垂直翻转，1表示水平翻转
 	cv::Mat Flip(cv::Mat src, int type);
 	// 旋转，angle表示逆时针旋转的角度,scale表示缩放大小

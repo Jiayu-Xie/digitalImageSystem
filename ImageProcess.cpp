@@ -2,12 +2,7 @@
 using namespace std;
 
 
-ImageProcess::ImageProcess(cv::Mat image)
-{
-	originImage16Bit = image;
-}
-
-cv::Mat ImageProcess::To8BitLinear(int center, int width)
+cv::Mat ImageProcess::To8BitLinear(cv::Mat originImage16Bit,int center, int width)
 {
 	double minVal, maxVal;
 	cv::minMaxIdx(originImage16Bit, &minVal, &maxVal);
